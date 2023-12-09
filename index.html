@@ -3,154 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jupiter Brain LLC</title>
+    <title>JUPITER BRAIN</title>
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        :root {
+            --dark: #12222C; /* The Count's Black */
+            --accent: #F95242; /* Pumpkin Spice */
         }
 
-        header {
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
             overflow: hidden;
-            background: #12222C url('background.jpg') center/cover no-repeat scroll;
-            color: white;
+            background: var(--dark) url('background.jpg') center/cover no-repeat;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
-            height: 100vh;
         }
 
-        header h1 {
-            font-family: 'Ysabeau', sans-serif;
-            font-weight: normal;
-            font-size: 10rem;
-            text-align: center;
-            text-transform: uppercase;
-            margin: 60vh 0 0;
-            text-shadow: 0px 0px 15px rgba(18, 34, 44, 0.8);
+        main {
             position: relative;
-            z-index: 1;
         }
 
-        header h1 > span {
-            font-weight: bold;
-        }
-
-        header h1 > span + span {
-            display: block;
-            font-size: 1.5rem;
-            background: #f95242;
-            position: absolute;
-            right: 15px;
-            bottom: -5px;
-            padding: 0 12px 4px;
-            box-shadow: 0px 0px 15px rgba(18, 34, 44, 0.8);
-            text-shadow: initial;
-            z-index: -1;
-        }
-
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            height: 100vh;
-            width: 85vw;
-            margin: 0 auto;
-        }
-
-        section:has(> div:only-child) {
-            width: 50vw;
-        }
-
-        section > div {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0 25px;
-        }
-
-        section h2 {
-            font-family: 'Manrope', sans-serif;
-            margin: 0;
-        }
-
-        section h2 {
-            font-size: 3rem;
-        }
-
-        section h2, section p {
-            text-align: center;
-        }
-
-        section p {
-            font-size: 1.25rem;
-        }
-
-        footer {
-            height: 10vh;
-            background-color: #12222c;
+        h1 {
             color: white;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
+            margin: 0;
+            position: relative;
+            bottom: 100px;
+            font-family: 'Ysabeau', sans-serif;
+            font-weight: 400;
+            font-size: 10rem;
+            line-height: 1;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px rgba(18, 34, 44, 0.8);
         }
-
-        footer p {
-            font-size: 0.75rem;
+        h1 span {
+            font-weight: 700;
         }
+        div {
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            background: var(--accent);
+            padding: 0 12px 2px;
+            position: absolute;
+            bottom: 65px;
+            right: 15px;
+            box-shadow: 0px 0px 15px rgba(18, 34, 44, 0.8);
 
+        }
         @media only screen and (max-width: 767px) {
-            header h1 {
-                font-size: 5.75rem;
+            h1 {
+                font-size: 5.5rem;
             }
-
-            header h1 > span {
-                display: block;
-                margin-top: -10%;
-            }
-
-            header h1 > span + span {
-                display: none;
-            }
-
-            section {
-                flex-direction: column;
-                width: 100% !important;
-            }
-
-            section > div {
-                margin: 25px;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
-
-            section p {
-                font-size: 1.1rem;
+            div {
+                bottom: 85px;
+                display: inline-block;
+                position: relative;
+                right: initial;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Jupiter <span>Brain</span> <span>LLC</span></h1>
-    </header>
-    <section>
-        <div>
-            <h2>Who &amp; What</h2>
-            <p>We are a technical consultancy specializing in front- and back-end software development, API &amp; middleware development, cloud infrastructure, enterprise commerce &amp; CMS integration, real-time/WebSocket development, and other supporting aspects of modern web applications.</p>
-            <p>We help companies advance their digital footprint and business capabilities by transforming innovative concepts into real solutions, where strategic thinking meets high-performance execution and measurable results.</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> Jupiter Brain LLC. All Rights Reserved.</p>
-    </footer>
+    <main>
+        <h1>Jupiter <span>Brain</span></h1>
+        <div>Coming Soon</div>
+    </main>
 </body>
 </html>
